@@ -127,4 +127,8 @@ clean_packages
 
 end_space=$(df --block-size=1M / | tail -n 1 | awk '{print $4}')
 cleared_space=$((start_space - end_space))
-echo "系统清理完成，清理了 ${cleared_space}M 空间！"
+if [ "$cleared_space" -ge 0 ]; then
+    echo "系统清理完成，清理了 ${cleared_space}M 空间！"
+else
+    echo "系统清理完成，但检测到空间使用增加，可能是其他进程占用了空间。"
+fi
