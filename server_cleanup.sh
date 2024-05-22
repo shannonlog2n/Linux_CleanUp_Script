@@ -33,6 +33,7 @@ find /var/log -type f -name "*.log" -exec truncate -s 0 {} \; > /dev/null 2>&1
 find /root -type f -name "*.log" -exec truncate -s 0 {} \; > /dev/null 2>&1
 find /home -type f -name "*.log" -exec truncate -s 0 {} \; > /dev/null 2>&1
 find /ql -type f -name "*.log" -exec truncate -s 0 {} \; > /dev/null 2>&1
+find /var/lib/docker/containers -type f -name "*.log" -exec truncate -s 0 {} \; > /dev/null 2>&1
 
 # 清理缓存目录
 echo "正在清理缓存目录..."
