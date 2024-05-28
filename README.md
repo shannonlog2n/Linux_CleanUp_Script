@@ -1,4 +1,4 @@
-# Debian_CleanUp_Script
+# Linux_CleanUp_Script
 
 ## 简介
 Linux_CleanUp_Script 是一个专为Linux服务器设计的 Bash 脚本，专注于系统维护，通过清理不必要的文件和组件来优化系统性能。
