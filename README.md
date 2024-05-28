@@ -1,7 +1,7 @@
 # Debian_CleanUp_Script
 
 ## 简介
-Debian_CleanUp_Script 是一个专为基于 Debian 的 Linux 发行版设计的 Bash 脚本，专注于系统维护，通过清理不必要的文件和组件来优化系统性能。
+Linux_CleanUp_Script 是一个专为Linux服务器设计的 Bash 脚本，专注于系统维护，通过清理不必要的文件和组件来优化系统性能。
 
 ## 功能
 - 清理未使用的内核
@@ -18,6 +18,6 @@ Debian_CleanUp_Script 是一个专为基于 Debian 的 Linux 发行版设计的 
 此脚本必须以 `root` 权限运行。
 
 ### 运行脚本
-克隆仓库到本地后，在终端运行以下命令：
+在终端运行以下命令：
 ```bash
-sudo ./server_cleanup.sh
+bash <(curl -s https://raw.githubusercontent.com/shannonlog2n/Linux_CleanUp_Script/main/server_cleanup.sh)
